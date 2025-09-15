@@ -30,7 +30,7 @@ const Navbar = () => {
   const toggleDarkMode = () => {
     const newMode = !darkMode;
     setDarkMode(newMode);
-    localStorage.setItem("darkMode", newMode); // Guardar preferencia
+    localStorage.setItem("darkMode", newMode); 
   };
 
   return (

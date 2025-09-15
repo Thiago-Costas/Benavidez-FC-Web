@@ -1,4 +1,3 @@
-// src/pages/quienesomos/galeria.jsx
 import React from "react";
 
 const Galeria = () => {

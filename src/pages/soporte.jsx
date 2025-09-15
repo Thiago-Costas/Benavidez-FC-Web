@@ -1,4 +1,3 @@
-// src/pages/soporte.jsx
 import React from "react";
 
 const Soporte = () => {

@@ -1,4 +1,3 @@
-// src/pages/quienesomos/objetivos.jsx
 import React from "react";
 
 const Objetivos = () => {

@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { ArrowUp } from "lucide-react"; // ✅ Import correcto
-import "../styles/scrolltop.css"; // ✅ Ruta correcta de estilos
+import { ArrowUp } from "lucide-react";
+import "../styles/scrolltop.css"; 
 
 const ScrollTop = () => {
     const [visible, setVisible] = useState(false);
-
-    // Detectar el scroll
     useEffect(() => {
         const toggleVisibility = () => {
             if (window.scrollY > 300) {
@@ -14,12 +12,9 @@ const ScrollTop = () => {
                 setVisible(false);
             }
         };
-
         window.addEventListener("scroll", toggleVisibility);
         return () => window.removeEventListener("scroll", toggleVisibility);
     }, []);
-
-    // Función para volver al inicio
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,

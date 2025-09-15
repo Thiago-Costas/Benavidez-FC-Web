@@ -1,4 +1,3 @@
-// src/pages/quienesomos/historia.jsx
 import React from "react";
 
 const Historia = () => {
