@@ -1,0 +1,24 @@
+#btnScrollTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    background-color: #009b4d;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#btnScrollTop:hover {
+    background-color: #ffcc00;
+    color: black;
+    transform: translateY(-4px);
+}

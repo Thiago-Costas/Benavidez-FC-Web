@@ -1,0 +1,138 @@
+/* ================== FOOTER ================== */
+.footer {
+    background-color: #FAF5E9;
+    color: #009B4D;
+    padding: 50px 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Logo */
+.footer-logo {
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Títulos */
+.footer-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Texto */
+.footer-text {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* ================== ENLACES DE NAVEGACIÓN ================== */
+/* Se ven como botones pero elegantes */
+.footer a {
+    display: inline-block;
+    background-color: transparent;
+    color: #009B4D;
+    padding: 6px 14px;
+    margin: 4px 4px;
+    border-radius: 6px;
+    border: 2px solid #009B4D;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    background-color: #009B4D;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* ================== ICONOS SOCIALES ================== */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #009B4D;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: #FFCC00;
+    color: #121212;
+    transform: scale(1.2);
+}
+
+/* Divisiones entre columnas */
+.footer .row > div {
+    padding: 0 1rem;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .footer .row > div:not(:last-child) {
+        border-right: 1px solid #009B4D;
+    }
+}
+
+/* ================== MODO OSCURO ================== */
+body.dark-mode .footer {
+    background-color: #1f1f1f;
+    color: #FFCC00;
+}
+
+body.dark-mode .footer a {
+    border-color: #FFCC00;
+    color: #FFCC00;
+    background-color: transparent;
+}
+
+body.dark-mode .footer a:hover {
+    background-color: #FFCC00;
+    color: #121212;
+}
+
+body.dark-mode .social-icons a {
+    background-color: #FFCC00;
+    color: #121212;
+}
+
+body.dark-mode .social-icons a:hover {
+    background-color: #fff;
+    color: #121212;
+}
+
+body.dark-mode .footer .row > div:not(:last-child) {
+    border-right: 1px solid #FFCC00;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+    .footer .row {
+        display: block;
+    }
+    .footer .row > div {
+        border-right: none;
+        padding: 10px 0;
+    }
+    .social-icons {
+        margin-top: 15px;
+    }
+    .footer a {
+        margin: 5px 3px;
+    }
+}
