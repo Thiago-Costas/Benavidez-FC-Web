@@ -1,0 +1,122 @@
+.error-page {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e9f7ef, #fdfdfd);
+    color: #222;
+    animation: fadeIn 0.8s ease-in;
+}
+
+.error-page::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, #a5e1ad 0%, transparent 70%);
+    animation: pulse 6s ease-in-out infinite;
+    z-index: 0;
+}
+
+.error-page>* {
+    position: relative;
+    z-index: 1;
+}
+
+.glitch-text {
+    font-size: 8rem;
+    font-weight: 900;
+    position: relative;
+    color: #dc3545;
+    text-shadow: 2px 2px #000;
+    animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 3px 0 red, -3px 0 cyan;
+    }
+
+    25% {
+        text-shadow: -3px 0 red, 3px 0 cyan;
+    }
+
+    50% {
+        text-shadow: 2px 2px red, -2px -2px cyan;
+    }
+
+    75% {
+        text-shadow: -2px -2px red, 2px 2px cyan;
+    }
+
+    100% {
+        text-shadow: 3px 0 red, -3px 0 cyan;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.bounce-btn {
+    transition: all 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.bounce-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 150, 0, 0.5);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body.dark-mode .error-page {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    color: #fff;
+}
+
+body.dark-mode .error-page::before {
+    background: radial-gradient(circle at center, #005f3f 0%, transparent 70%);
+}
+
+body.dark-mode .glitch-text {
+    color: #00c37a;
+    text-shadow: 2px 2px #000;
+}
+
+body.dark-mode .bounce-btn {
+    background-color: #00a86b;
+    border: none;
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/navbar.css";
+import "../styles/components/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUsers,
@@ -72,7 +72,7 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="/historia">
+                  <a className="dropdown-item" href="./historia">
                     <FontAwesomeIcon icon={faBook} className="me-2" /> Historia
                   </a>
                 </li>
