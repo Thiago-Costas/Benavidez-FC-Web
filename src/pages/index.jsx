@@ -1,7 +1,7 @@
-export { default as Home } from './home';
-export { default as Productos } from './productos';
-export { default as Soporte } from './soporte';
-export { default as Galeria } from './quienesomos/galeria';
-export { default as Historia } from './quienesomos/historia';
-export { default as Noticias } from './quienesomos/noticias';
-export { default as Objetivos } from './quienesomos/objetivos';
+export { Home } from './home';
+export { Productos } from './productos';
+export { Soporte } from './soporte';
+export { Galeria } from './quienesomos/galeria';
+export { Historia } from './quienesomos/historia';
+export { Noticias } from './quienesomos/noticias';
+export { Objetivos } from './quienesomos/objetivos';

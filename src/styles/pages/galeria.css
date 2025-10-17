@@ -1,0 +1,269 @@
+.gallery-main {
+  padding: 24px;
+  font-family: "Lexend Deca", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #121212;
+  background-color: var(--gallery-bg, #faf5e9);
+}
+
+.gallery-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.gallery-nav ul {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow-x: auto;
+}
+
+.gallery-nav li {
+  flex: 0 0 auto;
+}
+
+.gallery-nav button {
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #009B4D;
+  transition: all 0.25s ease;
+}
+
+.gallery-nav li.active button,
+.gallery-nav button:hover {
+  background: #009B4D;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 155, 77, 0.18);
+  transform: translateY(-2px);
+}
+
+.gallery-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-section {
+  padding: 18px 8px 40px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+  background: transparent;
+  opacity: 0.4;
+  transform: translateY(8px);
+}
+
+.gallery-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-header h2 {
+  font-family: "Bungee", sans-serif;
+  color: #009B4D;
+  margin-bottom: 6px;
+  font-size: 1.6rem;
+}
+
+.section-header .intro {
+  color: #444;
+  margin-bottom: 16px;
+  max-width: 900px;
+}
+
+.carousels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.carousel {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.carousel:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+}
+
+.carousel-media {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+.carousel-media img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.carousel-media:hover img {
+  transform: scale(1.06);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 12px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.45) 100%);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.carousel-media:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+  background: rgba(0,0,0,0.35);
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.btn-prev, .btn-next {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #f0f0f0;
+  color: #333;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.12s ease;
+}
+
+.btn-prev:hover, .btn-next:hover {
+  background: #e6e6e6;
+  transform: translateY(-2px);
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.12s ease;
+}
+
+.dot.active {
+  background: #009B4D;
+  transform: scale(1.15);
+}
+
+@media (max-width: 1100px) {
+  .carousels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .carousels {
+    grid-template-columns: 1fr;
+  }
+  .gallery-nav ul {
+    gap: 6px;
+  }
+  .gallery-nav button {
+    padding: 6px 10px;
+    font-size: 0.95rem;
+  }
+}
+
+body.dark-mode .gallery-main {
+  --gallery-bg: #121212;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode .gallery-nav button {
+  color: #FFCC00;
+  border-color: rgba(255,204,0,0.08);
+}
+
+body.dark-mode .gallery-nav li.active button,
+body.dark-mode .gallery-nav button:hover {
+  background: #FFCC00;
+  color: #121212;
+}
+
+body.dark-mode .gallery-section {
+  background: rgba(255,255,255,0.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .section-header h2 {
+  color: #FFCC00;
+}
+
+body.dark-mode .section-header .intro {
+  color: #ddd;
+}
+
+body.dark-mode .carousel {
+  background: #1f1f1f;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .carousel-media {
+  background: #222;
+}
+
+body.dark-mode .overlay-text {
+  background: rgba(0,0,0,0.45);
+}
+
+.section-header h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin: 8px auto 0;
+  background: linear-gradient(90deg,#009B4D,#FFCC00);
+  border-radius: 3px;
+}

@@ -8,7 +8,7 @@ const noticiasData = [
     titulo: "Nueva camiseta edición 10 Años",
     resumen: "Presentamos los modelos conmemorativos por los 10 años de historia del club.",
     contenido:
-      "Benavidez Fútbol Club lanza su camiseta edición especial por los 10 años. Inspirada en los primeros colores del club, combina detalles dorados con el tradicional azul y blanco. Disponible desde este mes en la tienda oficial.",
+      "Benavidez Fútbol Club lanza su camiseta edición especial por los 10 años. Inspirada en los primeros colores del club, combina detalles dorados con el tradicional verde y amarillo. Disponible desde este mes en la tienda oficial.",
     imagen: "/public/images/pages/primernoticia.png",
   },
   {

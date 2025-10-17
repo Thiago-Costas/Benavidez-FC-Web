@@ -77,7 +77,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/objetivos">
+                  <a className="dropdown-item" href="./objetivos">
                     <FontAwesomeIcon icon={faBullseye} className="me-2" /> Objetivo/Misión
                   </a>
                 </li>

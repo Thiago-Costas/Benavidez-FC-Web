@@ -10,6 +10,7 @@ import Productos from "./pages/productos";
 import Soporte from "./pages/soporte";
 import Galeria from "./pages/quienesomos/galeria";
 import Historia from "./pages/quienesomos/historia";
+import Objetivos from "./pages/quienesomos/objetivos";
 import Noticias from "./pages/quienesomos/noticias";
 import Error404 from "./pages/error404";
 
@@ -24,7 +25,7 @@ function App() {
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/historia" element={<Historia />} />
         <Route path="/noticias" element={<Noticias />} />
-        <Route path="/historia" element={<Historia />} />
+        <Route path="/objetivos" element={<Objetivos />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <ScrollTop />

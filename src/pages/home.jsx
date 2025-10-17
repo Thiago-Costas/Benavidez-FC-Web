@@ -10,7 +10,7 @@ const Home = () => {
           <p className="subheading">
             "Formando Jugadores, Construyendo sueños"
           </p>
-          <a href="/quienes-somos/historia" className="btn btn-mandarin">
+          <a href="./historia" className="btn btn-mandarin">
             Conocé el Club
           </a>
         </div>
@@ -72,49 +72,6 @@ const Home = () => {
             En Benavidez FC, fomentamos la disciplina, el respeto, el trabajo en
             equipo y la inclusión.
           </p>
-
-          <div className="row g-4 mb-4">
-            <div className="col-md-3">
-              <div className="card h-100 shadow-sm">
-                <div className="card-body">
-                  <i className="fas fa-heart fa-2x text-success mb-3"></i>
-                  <h5>Pasión</h5>
-                  <p>Jugamos con el corazón, representando a nuestra comunidad.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3">
-              <div className="card h-100 shadow-sm">
-                <div className="card-body">
-                  <i className="fas fa-users fa-2x text-success mb-3"></i>
-                  <h5>Comunidad</h5>
-                  <p>Somos un espacio de contención, unión y crecimiento para todos.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3">
-              <div className="card h-100 shadow-sm">
-                <div className="card-body">
-                  <i className="fas fa-handshake fa-2x text-success mb-3"></i>
-                  <h5>Compromiso</h5>
-                  <p>Cada paso que damos es con responsabilidad y dedicación.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3">
-              <div className="card h-100 shadow-sm">
-                <div className="card-body">
-                  <i className="fas fa-star fa-2x text-success mb-3"></i>
-                  <h5>Excelencia</h5>
-                  <p>Buscamos crecer en lo deportivo, humano y social día a día.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <a href="/quienes-somos/objetivos" className="btn btn-success btn-lg mt-3">
             Conocer nuestros Objetivos
           </a>

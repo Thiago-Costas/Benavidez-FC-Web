@@ -1,0 +1,54 @@
+.objetivos-section {
+    background: linear-gradient(180deg, #f7f7f0 0%, #fff 100%);
+    color: #121212;
+    min-height: 100vh;
+}
+
+.objetivo-card,
+.mision-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.objetivo-card:hover,
+.mision-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.objetivos-list li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.valor-card {
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.valor-card:hover {
+    transform: scale(1.05);
+    background: #e9fbe9;
+}
+
+/* Modo oscuro */
+body.dark-mode .objetivos-section {
+    background: linear-gradient(180deg, #121212 0%, #1e1e1e 100%);
+    color: #f1f1f1;
+}
+
+body.dark-mode .objetivo-card,
+body.dark-mode .mision-card {
+    background: #1f1f1f;
+    color: #f1f1f1;
+    border-color: #28a745;
+}
+
+body.dark-mode .valor-card {
+    background: #1f1f1f;
+    border-color: #28a745;
+}
+
+body.dark-mode .valor-card:hover {
+    background: #2a2a2a;
+}
