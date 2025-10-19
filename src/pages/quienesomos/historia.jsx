@@ -113,7 +113,7 @@ const Historia = () => {
           </div>
 
           <div className="text-center mt-4">
-            <a href="/Secciones/soporte/html/soporte.html">
+            <a href="/soporte">
               <button className="btn btn-success btn-lg px-5 shadow">
                 ¡Sumate y ayudanos a crecer! <i className="fas fa-arrow-right ms-2"></i>
               </button>
