@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/pages/galeria.css";
-
+/* Esto no lo pude hacer solo, ṕedi ayuda, mi idea es que qude algo muy lindo y apta para un club de verdad, agregue funciones que nunca habia visto, de todas maneras tuve ayuda. */
 const sections = [
   {
     id: "equipo",

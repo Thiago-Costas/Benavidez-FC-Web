@@ -33,7 +33,7 @@ const Home = () => {
               <div className="card card-link">
                 <i className="fas fa-image fa-3x mb-3 text-success"></i>
                 <h5>Galería</h5>
-                <a href="/quienes-somos/galeria" className="btn btn-outline-success">
+                <a href="/galeria" className="btn btn-outline-success">
                   Ver fotos
                 </a>
               </div>
@@ -72,7 +72,7 @@ const Home = () => {
             En Benavidez FC, fomentamos la disciplina, el respeto, el trabajo en
             equipo y la inclusión.
           </p>
-          <a href="/quienes-somos/objetivos" className="btn btn-success btn-lg mt-3">
+          <a href="/objetivos" className="btn btn-success btn-lg mt-3">
             Conocer nuestros Objetivos
           </a>
         </div>
@@ -88,7 +88,7 @@ const Home = () => {
                 <img src="/public/images/pages/primernoticia.png" alt="Nueva camiseta edición 2025" className="news-img-top mb-3"/>
                 <h5>Nueva camiseta edición 10 Años</h5>
                 <p>Presentamos los modelos conmemorativos por los 10 años de historia del club.</p>
-                <a href="/quienessomos/noticias" className="link-more">Leer más →</a>
+                <a href="/noticias" className="link-more">Leer más →</a>
               </div>
             </div>
 
@@ -97,7 +97,7 @@ const Home = () => {
                 <img src="/public/images/pages/segundanoticia.jpg" alt="Arrancan las inscripciones" className="news-img-top mb-3"/>
                 <h5>Arrancan las inscripciones</h5>
                 <p>¡Te esperamos!, Sumate</p>
-                <a href="./quienesomos/noticias" className="link-more">Leer más →</a>
+                <a href="/noticias" className="link-more">Leer más →</a>
               </div>
             </div>
 
@@ -106,7 +106,7 @@ const Home = () => {
                 <img src="/public/images/pages/terceranoticia.jpeg" alt="Arrancan las inscripciones" className="news-img-top mb-3"/>
                 <h5>17 años de su partida</h5>
                 <p>Recordando en este dia a 17 años de su partida al "MAGO GASPAR" </p>
-                <a href="" className="link-more">Leer más →</a>
+                <a href="/noticias" className="link-more">Leer más →</a>
               </div>
             </div>
           </div>
