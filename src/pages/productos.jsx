@@ -104,7 +104,6 @@ export default function Productos() {
         </div>
       </div>
 
-      {/* Modal del producto */}
       <AnimatePresence>
         {productoActivo && (
           <motion.div
@@ -125,7 +124,6 @@ export default function Productos() {
               <h2 className="titulo-modal">{productoActivo.nombre}</h2>
               <hr className="divisor" />
 
-              {/* Carrusel */}
               <div id="carouselDetalles" className="carousel slide mb-4" data-bs-ride="carousel">
                 <div className="carousel-inner rounded-4 shadow">
                   {productoActivo.galeria.map((img, index) => (
@@ -154,8 +152,6 @@ export default function Productos() {
                   <span className="carousel-control-next-icon"></span>
                 </button>
               </div>
-
-              {/* Info */}
               <p className="descripcion">{productoActivo.descripcion}</p>
 
               <h5 className="subtitulo">Colores disponibles</h5>
